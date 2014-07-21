@@ -1,0 +1,32 @@
+object(xmlrpcval)#30 (3) { 
+	["me"]=> array(1) { 
+		["array"]=> array(2) { 
+			[0]=> object(xmlrpcval)#28 (3) { 
+				["me"]=> array(1) { 
+					["int"]=> int(3) 
+				} 
+				["mytype"]=> int(1) ["_php_class"]=> NULL 
+			}
+			[1]=> object(xmlrpcval)#29 (3) {
+			 	["me"]=> array(1) { 
+			 		["string"]=> string(3) "Eko" 
+			 	} ["mytype"]=> int(1) ["_php_class"]=> NULL 
+			} 
+		} 
+	} 
+["mytype"]=> int(2) ["_php_class"]=> NULL }
+
+
+
+object(xmlrpcval)#23 (3) { 
+	["me"]=> array(1) { 
+		["string"]=> string(10) "Manager IT" } 
+			["mytype"]=> int(1) ["_php_class"]=> NULL } 
+
+
+
+			<a href="profil_admin.php?login='.$value['id']->scalarval().'"><img src="<?php echo data_uri($value['image']->scalarval(),'image/png'); ?>" padding: "200px" height="100" /></a><span class="friendly"><a href="profil_admin.php?login='.$value['id']->scalarval().'">'.$value['login']->scalarval().'</a></span>
+                    </span>
+
+
+                    <?php echo data_uri($value['image']->scalarval(),'image/png'); ?>"
