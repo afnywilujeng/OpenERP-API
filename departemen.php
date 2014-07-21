@@ -121,7 +121,7 @@ class OpenERPXmlrpc {
          $this->msg->addParam(new xmlrpcval($this->database, "string"));
          $this->msg->addParam(new xmlrpcval(1, "int"));
          $this->msg->addParam(new xmlrpcval($this->password, "string"));
-         $this->msg->addParam(new xmlrpcval("crm.meeting","string"));
+         $this->msg->addParam(new xmlrpcval("hr.department","string"));
          $this->msg->addParam(new xmlrpcval("read", "string"));
          $this->msg->addParam(new xmlrpcval($ids_read, "array"));
          $this->msg->addParam(new xmlrpcval($key, "array"));
@@ -141,6 +141,7 @@ class OpenERPXmlrpc {
                $read_html .= '
                      <tr>
                         <td>'.$value['name']->scalarval().'</td>
+                        <td>'.$value['manager_id']->scalarval()[1]->scalarval();
                         
                      </tr>';
                         //  var_dump($value['manager_id']->scalarval()[1]->scalarval());
